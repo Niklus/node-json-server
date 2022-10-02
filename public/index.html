@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JSON Server</title>
+  <script src="index.js"></script>
+</head>
+<body>
+  <h1>JSON Server</h1>
+  <h2>Base:</h2> 
+  <p id="base"></p>
+  <h2>Endpoints:</h2>
+  <a href="/comments">/comments</a><br/>
+  <a href="/posts">/posts</a><br/>
+  <a href="/profile">/profile</a>
+  <script>
+    document.getElementById("base").innerHTML = `
+      ${window.location.origin}
+    `;
+  </script>
+</body>
+</html>
